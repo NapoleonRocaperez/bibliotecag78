@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body> <!--action es para que lo reciba puede ser un archivo php-->
+    <form action="" method=""> <!--method es como enviar datos post=enviar y get=conseguir-->
+        <label for="nombre">Ingresa el nombre</label>
+        <input type="text" id="nombre"placeholder="Nombre" maxlength="10" size="50" required name="nombre"> 
+        <!--placeholder borra-->
+         <!--requiered tiene que colocar un nombre es una validacion-->
+         <br/>
+         <input type="email" placeholder="Correo" maxlength="50" size="50" required name="correo"> 
+          
+         <br/>
+                                                       <!--disabled-->
+        <input type="text" placeholder="Apellido" maxlength="10" size="50" readonly name="Apellido"> 
+        <br/>            <!--columna ancho filas alto mejos con css-->
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder=" mensaje" ></textarea>
+        <br/>          <!--elemento del doom por id-->
+        <!--enlazarlo con dicho campo usando la etiqueta "for"-->
+        <label for="pais">Pais: </label>
+       
+        <select name="Pais" id="pais">
+            <option value="Colombia">Colombia</option>
+            <option value="España">España</option>
+            <option value="Venezuela">Venezuela</option>
+        </select>
+        <br/> 
+        <label for="hombre">genero</label>
+        <input type="radio" name="genero"value"Hombre"" id="hombre">Hombre
+        <input type="radio" name="genero"value"Mujer"" id="mujer">Mujer
+        <input type="radio" name="genero"value"Lgbt"" id="lgbt">Lgbt
+        <input type="submit" value="Enviar">
+        <br/> 
+
+        <input type="checkbox" name="teminos"value"terminos" id="terminos">
+        <label for="terminos">Terminos y condiciones </label>
+
+    </form>
+
+    
+</body>
+</html>
