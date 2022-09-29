@@ -19,8 +19,10 @@ body {
 }
 
 .contenedor{          /*depues centramos la pagina mas adelante*/
-     width: 1000px;
-     margin: 20px ;
+    width: 90%; /*el 10% restante sea un espaciado */
+    /*width: 1000px;*/
+     max-width: 1000px;/*pantallas grandes*/
+     margin: 20px  auto;
      overflow:hidden ;
 
 }
@@ -66,7 +68,8 @@ header nav ul li  :hover{   /*pasar el mouse */
 /* Diseñor adaptable */
 
 .main {
-    width: 700px;
+    width: 70%;
+    /*width: 700px;*/
     background: #fff;
     float: left;
 
@@ -99,7 +102,8 @@ header nav ul li  :hover{   /*pasar el mouse */
 /*colocar el aside a la derecha*/
 
 aside {
-    width: 300px;
+    width: 30%;
+    /*width: 300px;*/
     background: #161f26;
     padding: 20px;
     color: #fff;
@@ -118,3 +122,58 @@ aside .widget .titulo {
     margin-bottom: 10px;
 }
 
+aside.widget ul{
+    list-style: none;
+}
+
+
+/*margenes en la lista*/
+aside .widget ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 0;
+}
+
+aside .widget ul li a {
+    color: #ffffff;
+    text-decoration: none;
+   
+}
+
+aside .widget ul li a:hover {
+    color: #8f8f8f;
+    
+}
+aside .widget p{
+    line-height: 27px;
+}
+
+footer{
+    width: 70%;
+    /*width: 700px;*/
+    overflow: hidden;
+    background: #000;
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    /*ejecute los estilos*/
+
+    body {
+       background: #000; 
+    }
+
+    .main{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
