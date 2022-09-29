@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" method="">
+        <label for="nombre">Ingresa tu nombre</label>
+        <br/>
+        <input type="text" id="nombre" placeholder="Nombre" maxlength="10" size="20"  required name="nombre">
+        <br/>
+        <input type="email" placeholder="Correo" maxlength="50" size="20" required name="correo">
+        <br/>
+        <input type="text"  placeholder="Apellido" id="apellido" maxlength="10" size="20" readonly="Apellido">
+        <br/>
+        <label for="mensaje">Deja tu mensaje</label>
+        <br/>
+        <textarea name="mensaje" id="mensaje"  cols="30" rows="10" placeholder="deje su mensaje"></textarea>
+        <br/>
+        
+        <label for="pais"> Pais</label>
+
+        <select name="Pais" id="pais">
+           <option value="Colombia">Colombia</option>
+           <option value="España">España</option>
+           <option value="Venezuela">Venezuela</option>
+        </select>
+        <br/>
+        <label for="mujer">genero </label>
+        <input type="radio" name="genero" value="Hombre" id="hombre" ></input>Hombre
+        <input type="radio" name="genero" value="Mujer" id="mujer" ></input>Mujer
+        <input type="radio" name="genero" value="lgbti" id="lgbti" ></input>Lgbti
+        <br/>
+        <input type="checkbox" name="terminos" value="terminos" id="terminos">
+        <label for="terminos">Terminos y condiciones</label>
+    </form>
+</body>
+</html>

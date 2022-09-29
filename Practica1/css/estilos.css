@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*forzar al contenedor a abarcar incluye el pading*/
+    /*La box-sizing propiedad nos permite incluir el relleno 
+    y el borde en el ancho y alto total de un elemento.
+    Si establece box-sizing: border-box;en un elemento,
+    el relleno y el borde se incluyen en el ancho y la altura: */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Sans-serif;
+    font-size: 16px;
+    background: #4a465b;
+}
+
+.contenedor{          /*depues centramos la pagina mas adelante*/
+     width: 1000px;
+     margin: 20px ;
+     overflow:hidden ;
+
+}
+
+header{
+
+    background: #fff;  
+}
+
+header nav{
+
+    width: 100%;
+}
+/*accedemos a la lista */
+header nav ul  {
+    width: 100%;
+    overflow: hidden;/* si recortar contenido, 
+    dibujar barras de desplazamiento 
+    o mostrar el contenido excedente en un 
+    elemento a nivel de bloque */
+    list-style: none;
+
+}
+
+header nav ul li{
+    float: left;   /*posiciona un elemento al lado del otro */
+    /*Todo se esta en blanco entonces le decimos al padre */
+}
+
+header nav ul li a {
+    text-decoration: none; /*quitar subrayado*/
+    display: inline-block;/*Modificar el pading*/
+    padding: 15px 20px; 
+    color: #000;
+}
+
+header nav ul li  :hover{   /*pasar el mouse */
+   background: #000;
+   color: #ffff;
+
+}
+
+/* Diseñor adaptable */
+
+.main {
+    width: 700px;
+    background: #fff;
+    float: left;
+
+}
+
+.main .imagen{
+    width: 100%;
+
+}
+/*la imagen abarque el contenedor */
+.main .imagen img {
+    width: 100%;
+    vertical-align: top;    /* Eliminar el vertical margen */
+}    
+
+.main .post {
+    padding: 40px;
+}
+
+.main .post article h2 {
+  margin-bottom: 20px;
+  color: #424242;
+}
+
+.main.post article p{
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+
+/*colocar el aside a la derecha*/
+
+aside {
+    width: 300px;
+    background: #161f26;
+    padding: 20px;
+    color: #fff;
+    float: left;
+}
+
+/*se implementa el float left */
+
+aside .widget {
+       margin-bottom: 20px;
+}
+
+aside .widget .titulo {
+    color: #ff8000;
+    border-bottom: 1px solid #ff8000;
+    margin-bottom: 10px;
+}
+
